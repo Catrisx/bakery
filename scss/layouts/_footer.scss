@@ -1,0 +1,81 @@
+.footer {
+       padding: 32px 0;
+       text-align: center;
+        background-image: url('../img/footer-bg.png');
+    background-color: var(--color--primary--dark);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media screen and (min-width: $bp--tablet) {
+        text-align: left;
+    }
+   }
+   .footer-container {
+       display: flex;
+       gap: 20px;
+       flex-direction: column;
+       @media screen and (min-width: $bp--tablet) {
+       
+        flex-direction: row;
+       }
+   }
+   
+   .footer-nav,.footer-address {
+       display: flex;
+       flex-direction: column;
+       flex-basis: 50%;
+       gap: 20px;
+       @media screen and (min-width: $bp--tablet) {
+        flex-basis: 50%;
+        flex-direction: row;
+       }
+   }
+   .footer-logo,.footer-menu {
+       flex-grow: 1;
+   }
+   
+   .address-list, .address-info {
+       flex-grow: 1;
+   }
+   
+   .address-link {
+    color: var(--color--primary--light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+   }
+   .address-link:hover {
+    color: var(--color--brand);
+   }
+   .address-copyright {
+    font-size: 14px;
+   }
+   
+   
+   
+   .address-icon {
+       fill: var(--color--primary--light);
+   }
+   .address-icon:hover {
+       fill: var(--color--primary--dark);
+   }
+   
+   .footer::before {
+       position: absolute;
+       width: 180px;
+       height: 120px;
+       bottom: 0;
+       left: 0;
+       background-image: url('../img/bread-small.png');
+       content: '';
+   }
+   .footer::after {
+       position: absolute;
+       width: 380px;
+       height: 190px;
+       bottom: 0;
+       right: 0;
+       background-image: url('../img/bread-large.png');
+       content: '';
+   }

@@ -1,0 +1,37 @@
+.traditions-title {
+    margin-bottom: 42px;
+   }
+   .traditions-section {
+    padding-top: 40px;
+    @media screen and (min-width: $bp--tablet) {
+      padding-top: 96px;
+    }
+   }
+   .traditions-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+   }
+   .traditions-content {
+    max-width: 710px;
+   }
+   
+   .traditions-text .brand {
+    color: var(--color--brand);
+    font-weight: 600;
+   }
+   .traditions-text .uppercase {
+    color: var(--color--brand);
+    text-transform: uppercase;
+   }
+   .traditions-text:nth-child(3) {
+    max-width: 340px;
+   }
+   .traditions-section__image {
+    display: none;
+    border-radius: 400px 400px 0px 0px;
+     @media screen and (min-width: $bp--tablet) {
+      display: block;
+    }
+   }
